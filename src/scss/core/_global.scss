@@ -1,0 +1,36 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $main-color-light;
+  padding: 20px;
+}
+
+//Titles general styles
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+h2 {
+  font-size: 3rem;
+}
+
+//Buttons general styles
+
+.btn {
+  padding: 5px 7px;
+  border: 1px solid $pink;
+  background-color: $pink;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: white;
+    color: $pink;
+  }
+}

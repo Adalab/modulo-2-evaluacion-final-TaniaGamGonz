@@ -32,12 +32,16 @@ function createAnimeCard(anime, listOnRender, buttonText){
     const li = document.createElement('li');
     const liTitle = document.createElement('h3');
     const liImg = document.createElement('img');
-    const addFavouriteButton = document.createElement('button');
-    addFavouriteButton.innerText = buttonText;
+    const button = document.createElement('button');
+    button.innerText = buttonText;
+    button.classList.add('btn');
     liTitle.innerText = animeName;
+    liTitle.classList.add('card__title');
     liImg.src = animeImg;
-    li.append(liTitle, liImg, addFavouriteButton);
+    liImg.classList.add('card__img');
+    li.append(liTitle, liImg, button);
     li.dataset.id = animeId;
+    li.classList.add('card');
     listOnRender.appendChild(li);
     li.addEventListener('click', setFavourite);
 }
