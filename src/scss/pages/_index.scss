@@ -83,7 +83,8 @@
   &__title {
     font-size: 2rem;
     max-height: 50px;
-    overflow: auto;
+    overflow: scroll;
+    //text-overflow: ellipsis;
     grid-row: 1/1;
   }
   &__img {
