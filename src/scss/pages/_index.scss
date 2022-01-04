@@ -27,17 +27,29 @@
 
 .results-and-favourites {
   display: flex;
-  justify-content: space-between;
 
   &__results ul,
   &__favourites ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: fit-content;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
   }
+
+  &__results p,
+  &__favourites p {
+    font-size: 1.7rem;
+    margin: 15px 0;
+  }
+
+  &__results ul.hidden,
+  &__favourites ul.hidden {
+    display: none;
+  }
+
   &__results {
     .results__title {
       width: 100%;
@@ -45,7 +57,13 @@
   }
 
   &__favourites {
+    width: 260px;
     margin-right: 20px;
+
+    ul {
+      flex-direction: column;
+    }
+
     .container {
       display: flex;
       .favourites__title {
@@ -96,6 +114,10 @@
     grid-row: 3/3;
     align-self: flex-end;
   }
+}
+
+.favourites__list .card {
+  width: 230px;
 }
 
 .favourite {

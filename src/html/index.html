@@ -30,16 +30,26 @@
       <section class="results-and-favourites__favourites">
         <div class="container">
           <h2 class="favourites__title">Favoritos</h2>
+
           <button class="js-resetFavourites-btn btn btn--resetFavourites">
             Borrar todos
           </button>
         </div>
-        <ul class="js-list-favourites favourites__list"></ul>
+        <p class="js-placeholder-favourites-text favourites__text">
+          ¡Vaya, parece que aún no has añadido ningún anime a tu lista de
+          favoritos! ¿Qué tal si le echas un vistazo a Shingeki no kyojin o
+          Death Note?
+        </p>
+
+        <ul class="js-list-favourites favourites__list hidden"></ul>
       </section>
 
       <section class="results-and-favourites__results">
         <h2 class="results__title">Resultados</h2>
-        <ul class="js-list-result results__list"></ul>
+        <p class="js-placeholder-results-text results__text">
+          No hay resultados para mostrar.
+        </p>
+        <ul class="js-list-result results__list hidden"></ul>
       </section>
     </section>
     <script src="./assets/js/main.js"></script>
