@@ -29,7 +29,9 @@ function createAnimeCard(anime, listOnRender, buttonText){
     addFavouriteClass(li, isFavourite);
 
 
-    //Listener on the card to set a new favourite or remove it. 
+    //Listener on the card to set a new favourite or remove it only in result list.
+
+    if(listOnRender === listResult){
     li.addEventListener('click', (event)=>{
 
 
@@ -39,11 +41,15 @@ function createAnimeCard(anime, listOnRender, buttonText){
         event.currentTarget.classList.toggle('favourite');
         handleFavourites(anime, isFavourite);
     });
-
+    }
     //listener to the button on the card to remove favourite
 
     button.addEventListener('click', event =>{
-       // deleteHtmlFavourite(event);
+       const animeId = event.currentTarget.parentNode.dataset.id;
+       deleteFavourite(animeId);
+       //remove favourite class from the result list
+      const resultLi =  listResult.querySelector(`[data-id="${animeId}"]`);
+      resultLi.classList.remove('favourite');
     })
 
 

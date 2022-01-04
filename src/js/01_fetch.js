@@ -58,23 +58,16 @@ function renderFavourites(anime, isAnimeAlreadyInFavourites){
 }
 function deleteFavourite(animeId){
     //first remove from array
-    const animePosition = favouriteAnimes.findIndex( anime => anime.mal_id === animeId);
+    const animePosition = favouriteAnimes.findIndex( anime => anime.mal_id === parseInt(animeId));
     favouriteAnimes.splice(animePosition, 1);
     //remove from local storage
     localStorage.removeItem('favourites');
     localStorage.setItem("favourites", JSON.stringify(favouriteAnimes));
-
     //clear the html
     listFavourites.innerHTML = '';
     favouriteAnimes.forEach( anime => {
         createAnimeCard(anime, listFavourites, 'Borrar de favoritos');
     })
-    
-
-   
-
-    
-
 }
 
 
