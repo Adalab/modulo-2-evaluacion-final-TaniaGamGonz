@@ -46,3 +46,7 @@ if(listFavourites.childNodes.length !== 0){
     }
 });
 
+logBtn.addEventListener('click', () =>{
+    console.log(`Tienes ${favouriteAnimes.length} animes favoritos.`);
+})
+

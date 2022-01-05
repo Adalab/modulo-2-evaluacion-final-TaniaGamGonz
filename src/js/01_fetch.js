@@ -11,6 +11,5 @@ function getAnimes(anime){
           createAnimeCard(anime, listResult, 'Añadir a series favoritas');
       }); 
 
-
   });
 }
