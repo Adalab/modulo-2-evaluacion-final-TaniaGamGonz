@@ -20,6 +20,8 @@ Escribe el nombre del anime que buscas y añádelo a tus favoritos.
   * Manipulación del DOM.
   * Gestión de eventos. 
   * Uso del localStorage.
+  * Arrow functions.
+  
 
 
 
