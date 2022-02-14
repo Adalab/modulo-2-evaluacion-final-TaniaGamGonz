@@ -2,6 +2,7 @@
 
 Buscador de anime creado con HTML, Scss y Javascript. 
 Escribe el nombre del anime que buscas y añádelo a tus favoritos. 
+  
 *Este proyecto está aún en desarrollo.*
 
 ## Tecnologías utilizadas
