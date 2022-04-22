@@ -1,0 +1,27 @@
+.form {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  &__input {
+    background-color: #fff !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 70%;
+    border: none;
+    height: 50px;
+    outline: 0;
+    font-size: 2rem;
+    padding: 5px;
+    padding-right: 25px;
+    color: $black;
+  }
+  .btn--submit {
+    background-color: white;
+    border: solid white 1px;
+    color: $black;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+  }
+}

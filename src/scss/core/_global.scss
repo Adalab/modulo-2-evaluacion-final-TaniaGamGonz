@@ -1,40 +1,47 @@
 html {
+  max-width: 100%;
   font-size: 10px;
+  font-family: $font-main;
+  color: $black;
 }
-
-body {
-  background-color: $main-color-light;
-  padding: 20px;
-}
-
-//Titles general styles
 
 h1 {
-  font-size: 4rem;
-  text-align: center;
+  font-family: elianto;
+  position: relative;
+  width: fit-content;
+  padding: 15px;
+  padding-top: 25px;
+  border: 3px solid $black;
+  border-bottom: none;
+  font-size: 7rem;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    width: 44px;
+    height: 3px;
+    background-color: $black;
+  }
+  &::before {
+    left: 308px;
+  }
 }
+
 h2 {
   font-size: 3rem;
 }
-
+//Utilities and support styles
 .hidden {
   display: none;
 }
 
-//Buttons general styles
-
-.btn {
-  padding: 5px 7px;
-  border: 1px solid $pink;
-  background-color: $pink;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  letter-spacing: 2px;
-  transition: all 0.4s;
-
-  &:hover {
-    background-color: white;
-    color: $pink;
-  }
+.container {
+  position: relative;
+  display: flex;
 }

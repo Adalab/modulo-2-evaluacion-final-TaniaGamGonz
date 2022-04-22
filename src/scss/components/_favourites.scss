@@ -1,0 +1,29 @@
+.favourites {
+  position: relative;
+  margin-left: 20px;
+
+  &__title {
+    font-size: 2.8rem;
+    color: $soft-pink;
+    margin-bottom: 10px;
+  }
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+
+  & p {
+    font-size: 1.7rem;
+    margin: 15px 0;
+  }
+
+  & ul.hidden {
+    display: none;
+  }
+
+  &__list .card {
+    width: 230px;
+  }
+}

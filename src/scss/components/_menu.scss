@@ -1,0 +1,42 @@
+.menu {
+  position: fixed;
+  z-index: 3;
+  height: fit-content;
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 5px 5px 0;
+  padding: 20px 0;
+
+  & li {
+    width: 165px;
+
+    &:first-child {
+      border-top-right-radius: 5px;
+      margin-bottom: 24px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 5px;
+    }
+
+    &.active {
+      color: $fuchsia;
+    }
+
+    & a {
+      display: inline-block;
+      padding: 10px;
+      padding-left: 24px;
+      font-size: 1.5rem;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $fuchsia;
+      }
+    }
+
+    & svg {
+      margin-bottom: -2px;
+      margin-right: 12px;
+    }
+  }
+}

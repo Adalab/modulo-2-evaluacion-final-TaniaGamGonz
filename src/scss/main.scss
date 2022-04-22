@@ -1,4 +1,11 @@
+@import "core/fonts";
 @import "core/variables";
 @import "core/reset";
 @import "core/global";
+@import "core/btn";
 @import "pages/index";
+@import "./components/form";
+@import "./components/menu";
+@import "./components/favourites";
+@import "./components/results";
+@import "./components/card";
