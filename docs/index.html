@@ -67,7 +67,7 @@
       <nav class="menu">
         <ul>
           <li>
-            <a href="">
+            <a href="#favourites">
               <svg width="16" height="16">
                 <use xlink:href="#heart"></use>
               </svg>
@@ -75,7 +75,7 @@
             >
           </li>
           <li>
-            <a href=""
+            <a href="#results"
               ><svg width="16" height="16">
                 <use xlink:href="#search-icon"></use>
               </svg>
@@ -85,7 +85,7 @@
         </ul>
       </nav>
       <div class="container">
-        <section class="favourites">
+        <section id="favourites" class="favourites">
           <h2 class="favourites__title">Favoritos</h2>
           <button class="js-resetFavourites-btn btn btn--resetFavourites">
             Borrar todos
@@ -98,7 +98,7 @@
           </p>
           <ul class="js-list-favourites favourites__list hidden"></ul>
         </section>
-        <section class="results">
+        <section id="results" class="results">
           <h2 class="results__title">Resultados</h2>
           <p class="js-placeholder-results-text results__text">
             No hay resultados para mostrar.
