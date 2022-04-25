@@ -25,11 +25,7 @@ searchBtn.addEventListener("click", (event) => {
   resetList(listResult);
   getAnimes(animeSearched);
 });
-resetBtn.addEventListener("click", () => {
-  resetList(listResult);
-  resultsPlaceholder.classList.remove("hidden");
-  listResult.classList.add("hidden");
-});
+
 resetFavouritesBtn.addEventListener("click", () => {
   resetList(listFavourites);
   favouritesPlaceholder.classList.remove("hidden");

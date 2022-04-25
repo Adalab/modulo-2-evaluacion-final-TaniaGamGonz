@@ -21,15 +21,18 @@
 
   &__title {
     font-size: 2rem;
-    overflow: scroll;
-    max-height: 15%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 16%;
     padding: 15px 20px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    transition: max-height 0.3s;
+    transition: all 0.3s;
 
     &:hover {
       max-height: 50%;
+      white-space: normal;
     }
   }
   &__img {
