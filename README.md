@@ -1,30 +1,24 @@
-# Buscador de anime
+# Sakura - Anime searcher
 
-Buscador de anime creado con HTML, Scss y Javascript. 
-Escribe el nombre del anime que buscas y añádelo a tus favoritos. 
+Anime search engine created with HTML, Scss and Javascript. 
+Type the name of the anime you are looking for and add it to your favorites. 
   
-*Este proyecto está aún en desarrollo.*
+*This project is still under development.
 
-## Tecnologías utilizadas
+## Technologies used
 
-* HTML5 Para la maquetación.
+* HTML5 for the layout.
 
-* Scss para los estilos. 
+* Scss for styles. 
   * Variables 
-  * Metodología BEM
+  * BEM methodology
   
-* Javascript vanilla para la funcionalidad de la página. 
-  * Ficheros separados por funcionalidad para mayor organización del código. 
-  * Peticiones Fetch a una API externa.
-  * Uso de promesas.
-  * Uso de métodos funcionales de arrays.
-  * Manipulación del DOM.
-  * Gestión de eventos. 
-  * Uso del localStorage.
+* Vanilla Javascript for page functionality. 
+  * Separate files by functionality for better organization of the code. 
+  * Fetch requests to an external API.
+  * Use of promises.
+  * Use of functional array methods.
+  * DOM manipulation.
+  * Event management. 
+  * Use of localStorage.
   * Arrow functions.
-  
-
-
-
-
-
